@@ -1,0 +1,22 @@
+[[language]]
+name = "python"
+language-servers = [ "basedpyright", "ruff" ]
+auto-format = true
+
+[language-server.basedpyright]
+command = "uv"
+args = ["tool", "run", "basedpyright-langserver", "--stdio"]
+
+[language-server.ruff]
+command = "uv"
+args = ["tool", "run", "ruff", "server"]
+
+# Keep your clean fallback setup for C scripts
+[[language]]
+name = "c"
+auto-format = true
+[language-server.clangd.config]
+fallbackFlags = ["-std=c17", "-Wall", "-Wextra"]
+
+#my theme:
+
