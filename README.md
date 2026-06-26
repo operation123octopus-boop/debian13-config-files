@@ -21,7 +21,7 @@
    ```
    then follow instructions as provided by homebrew
 
-   3. Install flatpak:
+3. Install flatpak:
    ```bash
     sudo apt install flatpak
     sudo apt install gnome-software-plugin-flatpak
@@ -48,7 +48,8 @@
      brew install helix
    ```
 3. {OPTIONAL} Install LSP (C and Python3):
-   Note: You may need to install *build-essentials* package with the *--no-install-recommends* flag for C.
+   
+   <font color:red>Note: You may need to install *build-essentials* package with the *--no-install-recommends* flag for C.</font>
    ```bash
    sudo apt install clangd --no-install-recommends
    brew install basedpyright ruff
@@ -58,8 +59,8 @@
    hx --health c #check the C programming health
    hx --heath python #check python heatlh
    ```
-4. {OPTIONAL} Install GNU Debugger:
-   Note: Install if require
+5. {OPTIONAL} Install GNU Debugger:
+   <font color:red>Note: Install if require</font>
    ```bash
    sudo apt install gdb --no-install-recommends
    ```
